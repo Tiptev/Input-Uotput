@@ -26,6 +26,16 @@ int ArithMean(int CountFirst, int CountSecond)//функция нахожден�
     return (CountFirst + CountSecond) / 2;
 }
 
+int DirProd(int CountFirst, int CountSecond)//функция произведения чисел
+{
+    return CountFirst * CountSecond;
+}
+
+int Div(int CountFirst, int CountSecond)//функция частного чисел
+{
+    return CountFirst / CountSecond;
+}
+
 int main()
 {
     int CountFirst;
@@ -37,7 +47,8 @@ int main()
     cout<< "Cумма чисел = "<<sum(CountFirst,CountSecond)<<endl;
     cout<<"Разность чисел = "<<dif(CountFirst,CountSecond)<<endl;
     cout<<"Среднеарифмитическое = "<<ArithMean(CountFirst,CountSecond)<<endl;
-    
+    cout << "Произведение чисел = " << DirProd(CountFirst, CountSecond) << endl;
+    cout << "Частное чисел = " << Div(CountFirst, CountSecond) << endl;
 
     return 0;
 }
